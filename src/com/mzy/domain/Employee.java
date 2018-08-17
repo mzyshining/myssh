@@ -6,6 +6,8 @@ public class Employee {
 	private Integer id;
 	private String name;
 	private String email;
+	private String pwd;
+	private Integer grade;
 	private java.util.Date hiredate;
 	private Float salary;
 	
@@ -40,6 +42,18 @@ public class Employee {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getPwd() {
+		return pwd;
+	}
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+	public Integer getGrade() {
+		return grade;
+	}
+	public void setGrade(Integer grade) {
+		this.grade = grade;
 	}
 	public java.util.Date getHiredate() {
 		return hiredate;

@@ -18,6 +18,12 @@
    <property name="salary" type="java.lang.Float">
     <column name="salary"/>
    </property>
+   <property name="pwd" type="java.lang.String">
+    <column name="pwd" length="32"/>
+   </property>
+   <property name="grade" type="java.lang.Integer">
+    <column name="grade" length="3"/>
+   </property>
  
  </class>
  </hibernate-mapping>
