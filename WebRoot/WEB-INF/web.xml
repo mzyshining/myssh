@@ -4,31 +4,35 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-  <display-name>myssh</display-name>	
- 
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
+  <display-name>/myssh</display-name>	
+  
+  
 
   <!-- struts2的过滤器 -->
+   
   <filter>
     <filter-name>struts2</filter-name>
     <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    <init-param> 
+        <param-name>listings</param-name> 
+        <param-value>true</param-value> 
+    </init-param> 
   </filter>
+   
 
   <filter-mapping>
      <filter-name>struts2</filter-name>
-     <url-pattern>/*</url-pattern>
+     <url-pattern>/WEB-INF/struts-config.xml</url-pattern>
   </filter-mapping>
   
-  <!-- spring的监听器配置开始 -->
-  <!-- 
-     <context-param>  
-         <param-name>contextConfigLocation</param-name>  
-         <param-value>classpath:applicationContext.xml</param-value>  
-     </context-param>
-     <listener>
-         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-     </listener>
-    -->
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
 </web-app>

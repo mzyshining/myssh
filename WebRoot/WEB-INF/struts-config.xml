@@ -3,13 +3,14 @@
 "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 
-<struts>
-
-    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+<struts-config>
+    
+	
+    
     <package name="com.mzy.web.action" extends="struts-default">
       <action name="login" class="com.mzy.web.action.LoginAction" method="execute">
-        <result name="success">/success.jsp</result>
-        <result name="error">/login.jsp</result>
+        <result name="success">/WEB-INF/success.jsp</result>
+        <result name="error">/WEB-INF/login.jsp</result>
       </action>
     </package>
-</struts>
+</struts-config>

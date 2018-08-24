@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Hello World</title>
+<title>Success page</title>
 </head>
 <body>
-    Hello World, Welcome! <s:property value="name"/>
+    Hello mzy, Welcome! <s:property value="name"/>
 </body>
 </html>
